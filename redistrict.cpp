@@ -36,7 +36,6 @@ void choose_centers(
   bool different;
   double scale;
   for (int tries = 0; tries < 100; ++tries){
-    cerr << tries << "\n";      
     different = false;
     centers = choose_initial_centers(clients, populations, num_centers);
     vector<int> center2num_clients(num_centers);
